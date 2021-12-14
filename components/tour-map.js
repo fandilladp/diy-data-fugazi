@@ -4,7 +4,7 @@ import MapGL, {FlyToInterpolator} from 'react-map-gl';
 import DeckGL, {LineLayer, ArcLayer, ScatterplotLayer} from 'deck.gl';
 
 // Set your mapbox access token here
-const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoibWF0aGlzb25pYW4iLCJhIjoiY2l5bTA5aWlnMDAwMDN1cGZ6Y3d4dGl6MSJ9.JZaRAfZOZfAnU2EAuybfsg';
+const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiZmFuZGlsbGFkcCIsImEiOiJja2t2bGhtdW8xNWE1MnBsbXR5bTFyNm94In0.Cw8RqeLPToDY7XpQuI4cjw';
 
 const d3 = require('d3');
 const Chromatic = require('d3-scale-chromatic');
