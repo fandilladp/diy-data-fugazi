@@ -12,10 +12,10 @@
     "googleFonts": [
       "EB Garamond"
     ],
-    "compiler": {
-      "postProcessors": [
-        "idyll-plugin-spellcheck"
-      ]
+    "idyll": {
+      "compiler": {
+        "postProcessors": ["idyll-plugin-spellcheck"]
+      }
     }
   },
   "dependencies": {
