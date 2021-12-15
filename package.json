@@ -14,7 +14,9 @@
     ],
     "idyll": {
       "compiler": {
-        "postProcessors": ["idyll-plugin-spellcheck"]
+        "postProcessors": [
+          "idyll-plugin-spellcheck"
+        ]
       }
     }
   },
@@ -27,7 +29,6 @@
     "idyll": "^3.7.5",
     "idyll-components": "^3.2.1",
     "idyll-d3-component": "^2.1.0",
-    "idyll-plugin-spellcheck": "^1.0.1",
     "idyll-vega-lite": "^1.0.2",
     "react-hero-video": "^0.1.1",
     "react-map-gl": "^3.2.10",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "firebase": "^5.4.0",
-    "gh-pages": "^0.12.0"
+    "gh-pages": "^0.12.0",
+    "idyll-plugin-spellcheck": "^1.0.1"
   }
 }
