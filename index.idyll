@@ -242,23 +242,23 @@
   [/Step]
 [/Scroller]
 
-[div style:`{
-  display: isMobile ? 'none' : 'auto',
-  position: 'fixed',
-  top: 30,
-  fontSize: 10,
-  right: 30,
-  background: playAudio ? 'white' : 'black',
-  padding: '5px 10px',
-  textTransform: 'uppercase',
-  // borderRadius: 20,
-  color: playAudio ? 'black' :'white',
-  border: 'solid 2px ' + (playAudio ? 'black' : 'white'),
-  // zIndex: 100,
-  cursor:'pointer'
-}`  onClick:`playAudio = !playAudio `]
-  [Display value:`playAudio ? 'Audio on' : 'Audio off' ` /]
-[/div]
+// [div style:`{
+//   display: isMobile ? 'none' : 'auto',
+//   position: 'fixed',
+//   top: 30,
+//   fontSize: 10,
+//   right: 30,
+//   background: playAudio ? 'white' : 'black',
+//   padding: '5px 10px',
+//   textTransform: 'uppercase',
+//   // borderRadius: 20,
+//   color: playAudio ? 'black' :'white',
+//   border: 'solid 2px ' + (playAudio ? 'black' : 'white'),
+//   // zIndex: 100,
+//   cursor:'pointer'
+// }`  onClick:`playAudio = !playAudio `]
+//   [Display value:`playAudio ? 'Audio on' : 'Audio off' ` /]
+// [/div]
 
 [Conditional if:`showControls && mapStep > 7 && mapStep < 10`]
   [div className:"controls" style:`{
