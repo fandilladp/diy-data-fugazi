@@ -58,6 +58,7 @@ typings/
 .env
 
 .idyll
+build
 
 *.twb
 analytics
