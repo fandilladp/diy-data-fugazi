@@ -38,7 +38,7 @@
 
 
 [var name:"isLoaded" value:false /]
-[var name:"started" value:false /]
+[var name:"started" value:started /]
 [var name:"showScroll" value:false /]
 [var name:"showHero" value:true /]
 [var name:"hideVideo" value:false /]
@@ -46,6 +46,7 @@
 [var name:"isMobile" value:false /]
 
 [MobileWatch isMobile:isMobile started:started showScroll:showScroll /]
+
 [ScrollLock locked:` !isMobile && !showScroll ` /]
 
 [Scroller]
@@ -57,18 +58,11 @@
       transition: 'opacity 1s',
       display: 'flex',
       flexDirection: 'row',
-      alignItems:' center',
-      opacity: hideVideo ? 0 : 1,
+      alignItems:' center'
+      // opacity: stepperState === 'hero' ? 1 : 0,
       // background: 'url(static/images/hero.jpg) no-repeat center center fixed',
     }` ]
-
-      // [Youtube play:`videoStep >= 1 && mapStep < 2` id:"k81wTUT7x4Y" /]
-      [Conditional if:isMobile null:true]
-        [img style:`{width: "100vw", height:'auto', maxHeight: 'none'}` src:"static/images/record.png" /]
-      [/Conditional]
-      [Conditional if:`!isMobile `]
-        [Youtube onReady:`videoReady = true ` play:started audio:playAudio id:"k81wTUT7x4Y" /]
-      [/Conditional]
+      [img style:`{width: "100vw", height:'auto', maxHeight: 'none'}` src:"static/images/hero.jpg" /]
     [/div]
   [/Graphic]
   [Step]
@@ -76,20 +70,6 @@
       title:"Program Pengurangan Risiko Bencana Berbasis Masyarakat"
       author:""
       authorLink:"https://twitter.com/mathisonian" /]
-
-    [Conditional if:`videoReady && !isMobile `]
-    [div style:`{textAlign: 'center'}`]
-      [Conditional if:`!started ` ]
-        [Button className:"start" onClick:`started = true; setTimeout(() => { showScroll = true; }, 4500); /*setTimeout(() => { hideVideo = true}, 25000); */ `]Click to start[/Button]
-      [/Conditional]
-      [Conditional if:`started && !showScroll ` ]
-        [Button className:"start"]loading...[/Button]
-      [/Conditional]
-      [Conditional if:`showScroll ` ]
-        [Button className:"start"]Scroll to continue[/Button]
-      [/Conditional]
-    [/div]
-    [/Conditional]
   [/Step]
   [Step]
     test emerged from the [Washington D.C. hardcore scene](https://en.wikipedia.org/wiki/Washington,_D.C._hardcore) in the late 1980s. They had a profound impact on the music industry without ever joining a major label or breaking into _Billboard_'s

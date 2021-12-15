@@ -12,7 +12,7 @@ class ScrollLock extends D3Component {
     }
 
     if (props.locked) {
-      d3.select('body').style('overflow', 'hidden').style('width', '100vw').style('height', '100vh');
+      d3.select('body').style('overflow', 'auto').style('width', '100vw').style('height', 'auto');
       window.scrollTo(0, 0);
     }
   }
@@ -20,7 +20,7 @@ class ScrollLock extends D3Component {
   update(props, oldProps) {
     if (props.locked !== oldProps.locked) {
       if (props.locked) {
-        d3.select('body').style('overflow', 'hidden').style('width', '100vw').style('height', '100vh');
+        d3.select('body').style('overflow', 'auto').style('width', '100vw').style('height', 'auto');
       } else {
         window.scrollTo(0, 0);
         d3.select('body').style('overflow', 'auto').style('width', '100vw').style('height', 'auto');
