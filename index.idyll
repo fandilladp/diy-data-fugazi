@@ -73,8 +73,8 @@
   [/Graphic]
   [Step]
     [Header
-      title:"The D-I-Y Data of Fugazi"
-      author:"Matthew Conlen"
+      title:"Program Pengurangan Risiko Bencana Berbasis Masyarakat"
+      author:""
       authorLink:"https://twitter.com/mathisonian" /]
 
     [Conditional if:`videoReady && !isMobile `]
